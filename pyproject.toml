@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "armdopq"
+version = "0.1.0"
+description = ""
+authors = ["Atithi Acharya"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.26.4"
+pandas = "^2.2.2"
+docplex = "^2.27.239"
+memory-profiler = "^0.61.0"
+dimod = "^0.12.14"
+dwave-samplers = "^1.2.0"
+gurobipy = "^11.0.2"
+scipy = "^1.13.1"
+scikit-learn = "^1.5.0"
+cplex = "^22.1.1.2"
+
+[tool.poetry.group.test.dependencies]
+pytest = "==7.2.0"
+coverage = "==6.5.0"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+pythonpath = "dcmppln"
+testpaths = "tests"
+junit_family = "xunit1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
